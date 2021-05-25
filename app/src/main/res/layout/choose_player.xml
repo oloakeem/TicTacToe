@@ -12,60 +12,83 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="112dp"
-        android:text="23421"
+        android:text="@string/chooseName"
+        android:textColor="#5E5E5E"
+        android:textStyle="bold"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editplayer1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
     </TextView>
 
     <TextView
+        android:textColor="#515151"
         android:id="@+id/textPlayer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player1"
+        android:text="@string/P1"
         app:layout_constraintBottom_toTopOf="@+id/editplayer1"
-        app:layout_constraintStart_toStartOf="@+id/editplayer1"></TextView>
+        app:layout_constraintStart_toStartOf="@+id/editplayer1">
+
+    </TextView>
 
     <EditText
+        android:inputType="text"
+        android:hint="@string/enterName"
+        android:autofillHints="@string/enterName"
         android:id="@+id/editplayer1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="168dp"
-        android:hint="player1"
+        android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toTopOf="@+id/editplayer2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"></EditText>
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
 
     <TextView
+        android:textColor="#515151"
         android:id="@+id/textPlayer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player2"
+        android:text="@string/P2"
         app:layout_constraintBottom_toTopOf="@+id/editplayer2"
-        app:layout_constraintStart_toStartOf="@+id/editplayer2"></TextView>
+        app:layout_constraintStart_toStartOf="@+id/editplayer2">
+
+    </TextView>
 
     <EditText
+        android:inputType="text"
+        android:hint="@string/enterName"
         android:id="@+id/editplayer2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="168dp"
-        android:hint="player2"
+        android:layout_marginBottom="364dp"
+        android:autofillHints="@string/enterName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"></EditText>
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
 
     <Button
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@drawable/play_button"
         android:id="@+id/playButton"
-        android:layout_width="wrap_content"
+        android:layout_width="135dp"
         android:layout_height="wrap_content"
-        android:text="Play"
+        android:text="@string/begin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editplayer2"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/editplayer2">
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>

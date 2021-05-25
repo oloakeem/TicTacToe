@@ -12,7 +12,7 @@ public class TicTacToe_Board extends AppCompatActivity {
 
     private TTTBoard tttBoard;
     Button playAgainBTN, homeBTN;
-    TextView playerTurn;
+    TextView playerTurn, player1, player2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,12 @@ public class TicTacToe_Board extends AppCompatActivity {
         playAgainBTN = findViewById(R.id.playAgainBTN);
         homeBTN = findViewById(R.id.homeBTN);
         playerTurn = findViewById(R.id.playerTURN);
+        player1 = findViewById(R.id.displayName1);
+        player2 = findViewById(R.id.displayName2);
+
         String[] playerNames = getIntent().getStringArrayExtra("PlayerTurn");
+        player1.setText((playerNames[0]));
+        player2.setText((playerNames[1]));
 
         if (playerNames != null) {
             playerTurn.setText((playerNames[0] + "'s Turn"));

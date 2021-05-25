@@ -2,4 +2,12 @@
     <string name="app_name">myTicTacToe</string>
     <string name="start">Start</string>
     <string name="p2s">Press to start</string>
+    <string name="chooseName">Enter players below!</string>
+    <string name="P1">Player 1</string>
+    <string name="P2">Player 2</string>
+    <string name="begin">Begin</string>
+    <string name="enterName">Enter name…</string>
+    <string name="playAgain">Play Again</string>
+    <string name="home">Go Home</string>
+
 </resources>
