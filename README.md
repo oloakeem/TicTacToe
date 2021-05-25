@@ -1,6 +1,6 @@
 ## TicTacToe
 ## About
-Simple TicTacToe 
+Built a simple tictactoe game for android mobile applications using android studio. 
 ## ScreenShots
 ![merge_from_ofoct](https://user-images.githubusercontent.com/74876042/119477509-03c6e600-bd1d-11eb-913f-d5d94c75184c.jpg)
 ## What I learned.
